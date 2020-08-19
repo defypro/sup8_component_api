@@ -1,0 +1,35 @@
+{
+  "name": "sup8_component_api",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "yarn nodemon -e ts,js --exec ts-node src/app",
+    "start": "yarn build && yarn pm2 start pm2.json",
+    "restart": "yarn build && yarn pm2 restart sup8_component_api",
+    "build": "yarn tsc"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.0.0",
+    "@types/koa-cors": "^0.0.0",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^8.0.8",
+    "md5": "^2.2.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@types/koa": "^2.11.3",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.4.0",
+    "@types/node": "^13.13.5",
+    "@types/sequelize": "^4.28.8",
+    "nodemon": "^2.0.3",
+    "pm2": "^4.4.0",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3"
+  }
+}
